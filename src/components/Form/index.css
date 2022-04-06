@@ -1,0 +1,96 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+}
+
+.form > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row > * {
+  display: flex;
+  flex: 1 1 50%;
+}
+
+.form-row > *:not(:first-child) {
+  margin-left: 32px;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset > label {
+  margin-bottom: 9px;
+}
+
+.fieldset > p {
+  margin-top: 4px;
+}
+
+.input-container {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.input-container > input {
+  padding-right: 45px;
+  width: 100%;
+}
+
+.input-suffix {
+  position: absolute;
+  right: 16px;
+}
+
+.input,
+.select {
+  background-color: var(--grey-1);
+  border: 2px solid var(--grey-1);
+  border-radius: var(--borde-radius);
+  padding: 11px 16px;
+  outline: none;
+}
+
+.input {
+  height: 24px;
+}
+
+.input::placeholder {
+  color: var(--grey-3);
+}
+
+.input:focus {
+  background-color: var(--white);
+  border: 2px solid var(--grey-4);
+}
+
+.select {
+  border-right: 16px solid var(--grey-1);
+  height: 50px;
+  width: 100%;
+}
+
+.divider {
+  width: 16px;
+}
+
+.font-button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .form {
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    padding: 38px 24px;
+  }
+}

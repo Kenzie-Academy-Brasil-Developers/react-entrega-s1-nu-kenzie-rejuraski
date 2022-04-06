@@ -1,0 +1,85 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-container > * {
+  margin-bottom: 16px;
+}
+
+.filter-button-container {
+  display: flex;
+}
+
+.filter-button-container > *:not(:first-child) {
+  margin-left: 8px;
+}
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.clear-container > * {
+  margin-bottom: 16px;
+}
+
+.card-clear-container {
+  background-color: var(--grey-1);
+  border-left: 4px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 16px;
+  min-height: 60px;
+  padding: 18px;
+}
+
+.card-clear-container > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.line-top {
+  background-color: var(--grey-2);
+  color: var(--grey-2);
+  max-width: 60%;
+}
+
+.line-bottom {
+  background-color: var(--grey-2);
+  color: var(--grey-2);
+  max-width: 20%;
+}
+
+@media (min-width: 700px) {
+  .list-container {
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .filter-container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filter-container > * {
+    margin-bottom: 32px;
+  }
+
+  .filter-button-container > * {
+    margin-left: 8px;
+  }
+
+  .clear-container > * {
+    margin-bottom: 32px;
+  }
+}
